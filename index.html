@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Image</title>
+		<script type="text/javascript">
+			function change(v){
+				document.getElementById("img").src=document.getElementById(v).src;
+			}
+		</script>
+	</head>
+	<body>
+		<table align="center" width="1000px" height="600px">
+			<tr>
+				<td></td>
+				<td colspan="2"><img src="3.jpeg" height="300px" width="500px" id="img" title="Image Title"/></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><img src="9.jpeg" height="200px" width="250px" id="a" onmouseover="change('a')" title="Image Title"/></td>
+				<td><img src="10.jpg" height="200px" width="250px" id="b" onmouseover="change('b')" title="Image Title"/></td>
+				<td><img src="3.jpeg" height="200px" width="250px" id="c" onmouseover="change('c')" title="Image Title"/></td>
+				<td><img src="7.jpg" height="200px" width="250px" id="d" onmouseover="change('d')" title="Image Title"/></td>
+			</tr>
+		</table>
+	</body>
+</html>
