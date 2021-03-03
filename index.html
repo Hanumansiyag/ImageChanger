@@ -3,25 +3,32 @@
 		<title>Image</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<script type="text/javascript">
 			function change(v){
 				document.getElementById("img").src=document.getElementById(v).src;
 			}
 		</script>
-	</head>
+	</head><br><br>
 	<body background="1.jpg">
-		<table align="center" width="1000px" height="600px">
-			<tr>
-				<td></td>
-				<td colspan="2"><img src="3.jpeg" height="300px" width="500px" id="img" title="Image Title"/></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td><img src="9.jpeg" height="200px" width="250px" id="a" onmouseover="change('a')" title="Image Title"/></td>
-				<td><img src="10.jpg" height="200px" width="250px" id="b" onmouseover="change('b')" title="Image Title"/></td>
-				<td><img src="3.jpeg" height="200px" width="250px" id="c" onmouseover="change('c')" title="Image Title"/></td>
-				<td><img src="7.jpg" height="200px" width="250px" id="d" onmouseover="change('d')" title="Image Title"/></td>
-			</tr>
-		</table>
+		<div class="container-fluid">
+			<div class="row" style="text-align: center;">
+				<div class="col-sm-12">
+					<img src="3.jpeg" height="250px" width="300px" id="img" title="Image Title"/>
+				</div>
+			</div><br><br><br>
+			<div class="row" style="text-align: center;">
+				<div class="col-sm-12">
+					<img src="9.jpeg" height="200px" width="250px" id="a" onmouseover="change('a')" title="Image Title"/>
+					<img src="10.jpg" height="200px" width="250px" id="b" onmouseover="change('b')" title="Image Title"/>
+					<img src="3.jpeg" height="200px" width="250px" id="c" onmouseover="change('c')" title="Image Title"/>
+					<img src="7.jpg" height="200px" width="250px" id="d" onmouseover="change('d')" title="Image Title"/>
+				</div>
+			</div>		
+		</div>
 	</body>
 </html>
